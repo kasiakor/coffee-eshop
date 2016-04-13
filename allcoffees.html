@@ -3,33 +3,111 @@
 <head>
 	<meta charset="utf-8">
 	<title>Kasia's Coffee store</title>
-	<script src="~/Scripts/jquery.min.js)"></script>
-	<link rel="stylesheet" type="text/css" href="styles.css"/>
+	<link rel="stylesheet" type="text/css" href="Styles/Layout.css"/>
+	<script src="scripts/dragAndDrop.js"></script>
+	<script src="scripts/videoplayer.js"></script>
 </head>
 <body>
-	<header>
+	<header id="mainHeader">
 		<div>
-			<a class="headerlogo" href="index.html">
-				<img src="Images/logo.png">
-			</a>
+			<div class="headerlogo" href="index.html">
+				<img src="Images/logo.jpg">
+			</div>
 			<span id="headername">Kasia's Coffee Store</span>
+			<input type="search" class="searchbox" placeholder="Search our Store"/>
 		</div>
+		<nav class="backgroundgradient">
+
+			<ul>
+				<li><a class="navlink" href="index.html">Home</a></li>
+				<li><a class="navlink" href="blog.html">Blog</a></li>
+				<li><a class="navlink" href="allcoffees.html">Our coffees</a></li>
+				<li><a class="navlink" href="accessories.html">Accessories</a></li>
+				<li><a class="navlink" href="findus.html">Find us</a></li>
+				<li><a class="navlink" href="checkout.html">Checkout</a></li>
+			</ul>
+		</nav> 
 	</header>
+
+	<div id="welcomeimage">
+		<img src="Images/coffeeheader.jpg">
+	</div>
+	<div id="coffeeofthemonth">
+		<img src="Images/cotm.jpg">
+	</div>
+
+
 	<section id="allcoffees">
 		<header class="blockheader"><span>Espresso coffee beans</span>
 		</header>
 
 		<article class="productarticlewide" id="coffee-1" data-price="10.00">
-			<img class="productarticlethumbnail" src="Images/coffee/coffee1.jpg">
+			<img class="productarticlethumbnail" src="Images/coffee1.jpg">
 			<div class="productarticlewidecontent">
 				<header>
 					<span class="productarticlewidename">Coffee 1</span>
 				</header>
-				<p class="productarticlewidedescription"></p>
+				<p class="productarticlewidedescription">This is my online shop with coffees from many exotic places. I have been very lucky and had a chance to try most of them with locals that work hard to collect them. Take a sip and let the flavour take you for an amazing journey around the globe!</p>
 				<p class="productarticlewideprice">£10</p>
 			</div>	
 		</article>
-
+		<article class="productarticlewide" id="coffee-1" data-price="12.00">
+			<img class="productarticlethumbnail" src="Images/coffee2.jpg">
+			<div class="productarticlewidecontent">
+				<header>
+					<span class="productarticlewidename">Coffee 2</span>
+				</header>
+				<p class="productarticlewidedescription">This is my online shop with coffees from many exotic places. I have been very lucky and had a chance to try most of them with locals that work hard to collect them. Take a sip and let the flavour take you for an amazing journey around the globe!</p>
+				<p class="productarticlewideprice">£12</p>
+			</div>	
+		</article>
+		<article class="productarticlewide" id="coffee-1" data-price="14.00">
+			<img class="productarticlethumbnail" src="Images/coffee3.jpg">
+			<div class="productarticlewidecontent">
+				<header>
+					<span class="productarticlewidename">Coffee 3</span>
+				</header>
+				<p class="productarticlewidedescription">This is my online shop with coffees from many exotic places. I have been very lucky and had a chance to try most of them with locals that work hard to collect them. Take a sip and let the flavour take you for an amazing journey around the globe!</p>
+				<p class="productarticlewideprice">£14</p>
+			</div>	
+		</article>
+		<article class="productarticlewide" id="coffee-1" data-price="15.00">
+			<img class="productarticlethumbnail" src="Images/coffee4.jpg">
+			<div class="productarticlewidecontent">
+				<header>
+					<span class="productarticlewidename">Coffee 4</span>
+				</header>
+				<p class="productarticlewidedescription">This is my online shop with coffees from many exotic places. I have been very lucky and had a chance to try most of them with locals that work hard to collect them. Take a sip and let the flavour take you for an amazing journey around the globe!</p>
+				<p class="productarticlewideprice">£15</p>
+			</div>	
+		</article>
 	</section>
+		<div id="shoppingcart">
+			<header class="blockheader"><span>Shopping cart</span></header>
+		</div>
+		<script>
+			document.addEventListener("DOMContentLoaded", addDnDHandlers, false);
+		</script>
+		<div>
+				<header class="blockheader">Watch this amazing video from coffee plantations in Columbia!</header>
+				<video width="320" height="240" class="coffeevideoplayer" id="videoplayer" poster="Images/videologo.jpg">
+					<source src="video/movie.mp4" type="video/mp4"/>
+					<source src="video/movie.ogg" type="video/ogg"/>
+					Your browser does not support the video tag.
+				</video>
+				<div id="controls">
+					<button id="playButton">Play</button>
+					<button id="backButton">Back</button>
+					<button id="forwardButton">Forward</button>
+					<button id="muteButton">Mute</button>
+					<br /><br /><br />
+				</div>
+
+			</div>
+
+			<script>
+			
+			document.addEventListener("DOMContentLoaded", initializeVideoPlayerControls, false);
+		</script>
 </body>
 </html>

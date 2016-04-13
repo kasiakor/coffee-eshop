@@ -190,6 +190,17 @@ mark {
 	width: 150px;
 }
 
+
+.blockheader {
+	font-family: headerfont;
+	font-size: 20px;
+	margin-top: 15px;
+	margin-bottom: 20px;
+	color: #422F21;
+
+}
+
+
 #bestsellers {
 
 	height: 100%;
@@ -270,5 +281,34 @@ footer {
 	color: #f3f3f3;
 	font-size: 0.8em;
 	width: 80px;
+
+}
+
+/* video for coffeedetails.html*/
+
+  #playButton, #backButton, #forwardButton, #muteButton {
+	cursor: pointer;
+	padding: 1px 5px;
+	background: #603813;
+	border:1px solid #381f09;
+
+
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+
+	-moz-box-shadow: 0 0 4px rgba(0,0,0, .75);
+	-webkit-box-shadow: 0 0 4px rgba(0,0,0, .75);
+	box-shadow: 0 0 4px rgba(0,0,0, .75);
+	
+	color: #f3f3f3;
+	font-size: 0.8em;
+	width: 76px;
+
+  }
+
+#videoplayer {
+
+	display: block;
 
 }
