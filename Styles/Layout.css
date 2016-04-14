@@ -188,13 +188,11 @@ mark {
 	width: 150px;
 }
 
-
 .blockheader {
+
 	font-family: headerfont;
-	font-size: 20px;
-	margin-top: 15px;
-	margin-bottom: 20px;
-	color: #422F21;
+	font-size: 18px;
+	color: #603813;
 
 }
 
@@ -227,13 +225,7 @@ footer {
 	float: left;
 }
 
-.blockheader {
 
-	font-size: 18px;
-	margin-top: 30px;
-	color: #603813;
-
-}
 
 .box {
 
