@@ -257,24 +257,21 @@ footer {
 
 .submitbutton {
 
-	cursor: pointer;
-	margin-top: 10px;
-	background: #603813;
-	border:1px solid #381f09;
-
-
-	-moz-border-radius: 8px;
-	-webkit-border-radius: 8px;
-	border-radius: 8px;
-
-	
-	color: #f3f3f3;
-	font-size: 0.8em;
-	width: 80px;
-
+cursor: pointer;
+margin: 15px 15px 30px 15px;
+background: #603813;
+border:1px solid #381f09;
+-moz-border-radius: 8px;
+-webkit-border-radius: 8px;
+border-radius: 8px;
+color: #f3f3f3;
+font-size: 0.8em;
+width: 100px;
+padding: 10px;
 }
 
-/* video for coffeedetails.html*/
+
+/* video for allcoffees.html*/
 
   #playButton, #backButton, #forwardButton, #muteButton {
 	cursor: pointer;
