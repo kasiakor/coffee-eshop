@@ -5,8 +5,9 @@
 	<title>Kasia's Coffee store</title>
 	<script src="~/Scripts/jquery.min.js)"></script>
 	<link rel="stylesheet" type="text/css" href="Styles/Layout.css"/>
+	<script src = "scripts/canvasChart.js" type="text/javascript"></script>
 </head>
-<body>
+<body onload="init()">
 	<header id="mainHeader">
 		<div>
 			<div class="headerlogo" href="index.html">
@@ -57,6 +58,11 @@
 
 	<section id="bestsellers">
 		<header class="blockheader">Bestsellers @ Kasia's Coffee Store</header>
+    <div>
+        <canvas id="can" height="400" width="650">
+        </canvas>
+    </div>
+
 		<section class="coffeebestsellers">
 			<header class="backgroundgradient"></header>
 				<article class="productarticle product_id_1">
