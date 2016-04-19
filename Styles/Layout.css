@@ -50,7 +50,13 @@ header {
 	font-weight: bold;
 	text-shadow: 5px 5px 5px #A5897E;
 }
+.productarticlename a {
 
+	color: #008000;
+	font-family: headerfont;
+	font-size: 18px;
+
+}
 nav {
 	height: 45px;
 	width: 100%;
@@ -90,7 +96,7 @@ nav > ul > li a:hover {
 
 .addtocartbutton {
 	cursor: pointer;
-	padding: 4px 25px;
+	padding: 4px 10px;
 	background: #603813;
 	border:1px solid #381f09;
 
@@ -105,8 +111,7 @@ nav > ul > li a:hover {
 	
 	color: #f3f3f3;
 	font-size: 0.8em;
-	width: 80px;
-
+	display: inline-block;
 }
 
 .addtocartbutton:hover, .addtocartbutton:focus {
@@ -184,8 +189,10 @@ mark {
 }
 
 .productarticle {
+	
+	text-align: center;
 	float:left;
-	width: 150px;
+	width: 130px;
 }
 
 .blockheader {
