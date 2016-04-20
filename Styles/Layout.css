@@ -150,7 +150,6 @@ nav > ul > li a:hover {
 
 #welcometext > header, #bestsellers > header{
 	color: #603813;
-	font-size: 15px;
 	font-weight: bold;
 	margin-bottom: 3px;
 }
@@ -172,7 +171,6 @@ mark {
 
 	margin-left: 10px;
 	color: #603813;
-	font-size: 15px;
 	margin-bottom: 3px;
 	font-weight: bold;
 
@@ -198,9 +196,9 @@ mark {
 .blockheader {
 
 	font-family: headerfont;
-	font-size: 18px;
+	font-size: 20px;
 	color: #603813;
-
+	margin-top: 20px;
 }
 
 
@@ -269,7 +267,33 @@ footer {
 	width: 100px;
 	padding: 10px;
 }
+/* allcoffees.html */
 
+	.productarticlewide {
+		display: flex;
+		border-style: groove; 4px #000;
+		margin: 20px 0;
+		padding: 10px;
+	}
+
+	.productarticlewidename {
+		color: #008000;
+		font-family: headerfont;
+		font-size: 18px;
+	}
+
+	.coffeename {
+		color: #008000;
+		font-family: headerfont;
+		font-size: 18px;
+	}
+
+	.productarticlethumbnail {
+		align-self: flex-start;
+		margin-top: 26px;
+		margin-left: 10px;
+		margin-right: 30px;
+	}
 
 /* video for allcoffees.html*/
 
