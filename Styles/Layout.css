@@ -323,3 +323,9 @@ footer {
 	display: block;
 
 }
+
+/* map for findus.html */
+
+#map {
+	margin-top: 20px;
+}

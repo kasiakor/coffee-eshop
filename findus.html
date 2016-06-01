@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://ww.w3.org/1999/xhtml">
+<head>
+	<meta charset="utf-8">
+	<title>Kasia's Coffee store</title>
+	<script src="~/Scripts/jquery.min.js)"></script>
+	<link rel="stylesheet" type="text/css" href="Styles/Layout.css"/>
+</head>
+<body>
+	<header id="mainHeader">
+		<div>
+			<div class="headerlogo" href="index.html">
+				<img src="Images/logo.jpg">
+			</div>
+			<span id="headername">Kasia's Coffee Store</span>
+			<input type="search" class="searchbox" placeholder="Search our Store"/>
+		</div>
+		<nav class="backgroundgradient">
+
+			<ul>
+				<li><a class="navlink" href="index.html">Home</a></li>
+				<li><a class="navlink" href="blog.html">Blog</a></li>
+				<li><a class="navlink" href="allcoffees.html">Our coffees</a></li>
+				<li><a class="navlink" href="accessories.html">Accessories</a></li>
+				<li><a class="navlink" href="findus.html">Find us</a></li>
+				<li><a class="navlink" href="checkout.html">Checkout</a></li>
+			</ul>
+		</nav> 
+	</header>
+
+	<div id="coffeeofthemonth">
+		<img src="Images/cotm.jpg">
+	</div>
+
+	<div id="welcomeimage">
+		<img src="Images/coffeeheader.jpg">
+	</div>
+	<header class="blockheader">
+		Here is our location:
+	</header>
+
+	<section id="map">
+		<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:440px;width:699px;'><div id='gmap_canvas' style='height:440px;width:699px;'></div><div><small><a href="http://embedgooglemaps.com">									embed google maps							</a></small></div><div><small><a href="https://privacypolicytemplate.net">privacy policy template</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:14,center:new google.maps.LatLng(51.5121945,-0.20863889999998264),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(51.5121945,-0.20863889999998264)});infowindow = new google.maps.InfoWindow({content:'<strong>Kasia\'s coffee store</strong><br>W11 6DB, London, United Kingdom<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+	</section>
+</body>
+</html>
